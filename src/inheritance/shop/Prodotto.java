@@ -66,3 +66,12 @@ public class Prodotto {
     public void setIva(double iva) {
         this.iva = iva;
     }
+    
+    public double calcolaPrezzo() {
+        return prezzo + (prezzo * iva / 100);
+    }
+    
+    public String dettagliProdotto() {
+        return "Codice: " + codice + ", Nome: " + nome + ", Marca: " + marca + ", Prezzo: " + prezzo + "€ IVA: " + iva + "%";
+    }
+}

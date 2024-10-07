@@ -10,7 +10,7 @@ public class Smartphone extends Prodotto {
         this.memoria = memoria;
     }
     
-    public String getImei() {
+	public String getImei() {
         return imei;
     }
 
@@ -25,3 +25,9 @@ public class Smartphone extends Prodotto {
     public void setMemoria(int memoria) {
         this.memoria = memoria;
     }
+
+	@Override
+	public String dettagliProdotto() {	
+		return super.dettagliProdotto() + ", IMEI: " + imei + ", Memoria: " + memoria + "GB";
+	}
+}

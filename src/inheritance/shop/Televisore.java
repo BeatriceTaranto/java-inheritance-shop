@@ -25,3 +25,9 @@ public class Televisore extends Prodotto {
     public void setSmart(boolean smart) {
         this.smart = smart;
     }
+
+	@Override
+	public String dettagliProdotto() {
+		return super.dettagliProdotto() + ", Dimensioni: " + dimensioni + " Smart: " + smart;
+	}
+}
